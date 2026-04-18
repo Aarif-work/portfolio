@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biruntha | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <div class="logo">Biruntha<span class="logo-dot">.</span></div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Projects</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Experience</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Contact</a>
+            </nav>
+            <div class="header-right">
+                <a href="mailto:hello@biruntha.dev" class="btn-hire">Contact Me</a>
+            </div>
+        </div>
+        <div class="header-line"></div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <!-- Ambient background -->
+        <div class="hero-bg">
+            <div class="bg-blob blob-left"></div>
+            <div class="bg-blob blob-right"></div>
+        </div>
+
+        <!-- Large bg name -->
+        <div class="bg-text" aria-hidden="true">BIRUNTHA</div>
+
+        <!-- Main content grid -->
+        <div class="hero-container">
+
+            <!-- Left: Text Content -->
+            <div class="hero-content">
+                <h1 class="hero-name">Biruntha</h1>
+                <p class="hero-title">Software Engineer</p>
+                <p class="hero-bio">
+                    A skilled mobile app developer with experience in building
+                    user‑friendly and efficient applications. Focused on creating
+                    reliable mobile solutions with clean design and smooth performance.
+                </p>
+                <div class="hero-cta">
+                    <a href="mailto:hello@biruntha.dev" class="btn btn-primary">Connect With Me</a>
+                    <a href="#" class="btn btn-ghost coming-soon-btn" data-label="Coming Soon">View Projects</a>
+                </div>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="hero-image-wrap">
+                <div class="img-glow"></div>
+                <img src="image.png" alt="Biruntha - Software Engineer" class="character-img" id="char-img">
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

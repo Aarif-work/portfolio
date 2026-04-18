@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Biruntha</title>
+    <meta name="description" content="About Biruntha — a passionate Software Engineer and mobile app developer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ── Header ── -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Biruntha<span class="logo-dot">.</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Projects</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Experience</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Contact</a>
+            </nav>
+            <div class="header-right">
+                <a href="mailto:hello@biruntha.dev" class="btn-hire">Contact Me</a>
+            </div>
+        </div>
+        <div class="header-line"></div>
+    </header>
+
+    <!-- ── About Page ── -->
+    <section class="about-page">
+
+        <!-- Ambient background -->
+        <div class="hero-bg">
+            <div class="bg-blob blob-left"></div>
+            <div class="bg-blob blob-right"></div>
+        </div>
+        <div class="bg-text" aria-hidden="true">ABOUT</div>
+
+        <div class="about-container">
+
+            <!-- ════ Top Section: Content + Image ════ -->
+            <div class="about-top-grid">
+
+                <!-- LEFT: Content Column -->
+                <div class="about-content">
+                    <span class="about-eyebrow">Get to know me</span>
+                    <h1 class="about-title">Turning Ideas Into<br>Digital Reality</h1>
+
+                    <div class="about-text">
+                        <p>
+                            I'm <strong>Biruntha</strong>, a Software Engineer who thrives at the intersection of clean
+                            code
+                            and thoughtful design. I specialize in building <strong>mobile applications</strong> that
+                            feel
+                            effortless to use — because great software should never feel like work.
+                        </p>
+                        <p>
+                            My approach is simple: understand the problem deeply, craft the cleanest possible solution,
+                            and build something people actually love using. Every project I take on gets 100% of my
+                            focus
+                            and craft.
+                        </p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="skills-section">
+                        <span class="section-label">Technical Skills</span>
+                        <div class="skills-grid" id="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Mobile Development</span>
+                                    <span class="skill-pct">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">UI / UX Design</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Image Column -->
+                <div class="about-image-col">
+                    <div class="about-image-wrap">
+                        <div class="img-glow"></div>
+                        <img src="image copy.png" alt="Biruntha - Profile" class="character-img about-img">
+
+                        <!-- Floating tag -->
+                        <div class="about-tag tag-top">
+                            <span class="about-tag-icon">📱</span>
+                            <div class="about-tag-label">
+                                <strong>Mobile Focused</strong>
+                                <span>High Performance Apps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack & Opportunities (Moved to Bottom of Image) -->
+                    <div class="about-meta-row">
+                        <div class="tech-stack-group">
+                            <p class="tech-label">Core Stack</p>
+                            <div class="tech-chips">
+                                <span class="tech-chip">Flutter</span>
+                                <span class="tech-chip">Dart</span>
+                                <span class="tech-chip">Firebase</span>
+                                <span class="tech-chip">React Native</span>
+                                <span class="tech-chip">HTML</span>
+                                <span class="tech-chip">CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="availability-status">
+                            <div class="availability-row">
+                                <span class="avail-dot"></span>
+                                <span class="avail-text">Open to opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ════ Bottom Section: 4 Cards ════ -->
+            <div class="about-cards-full">
+                <div class="about-cards">
+                    <div class="about-card">
+                        <span class="about-card-icon">🎯</span>
+                        <h4>Problem Solver</h4>
+                        <p>I break complex challenges into clean, maintainable solutions.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-card-icon">✨</span>
+                        <h4>Detail Oriented</h4>
+                        <p>Pixel-perfect execution with a high standard for quality.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-card-icon">🚀</span>
+                        <h4>Performance First</h4>
+                        <p>Fast, smooth, and reliable apps — always optimized.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-card-icon">🤝</span>
+                        <h4>Team Player</h4>
+                        <p>Collaborative by nature, communicative by practice.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
