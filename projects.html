@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Projects | Biruntha</title>
+    <meta name="description" content="Projects by Biruntha — Software Engineer and mobile app developer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ── Header ── -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Biruntha<span class="logo-dot">.</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Experience</a>
+                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Contact</a>
+            </nav>
+            <div class="header-right">
+                <a href="mailto:hello@biruntha.dev" class="btn-hire">Contact Me</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="header-line"></div>
+    </header>
+
+    <!-- ── Projects Page ── -->
+    <section class="projects-page">
+        <!-- Ambient background -->
+        <div class="hero-bg">
+            <div class="bg-blob blob-left"></div>
+            <div class="bg-blob blob-right"></div>
+        </div>
+        <div class="bg-text" aria-hidden="true" style="font-size: 15vw;">WORK</div>
+
+        <div class="projects-container">
+
+            <div class="projects-hero-grid">
+                <div class="projects-header">
+                    <span class="projects-eyebrow">My Portfolio</span>
+                    <h1 class="projects-title">Featured Projects</h1>
+                    <p class="projects-subtitle">
+                        A collection of mobile applications crafted with passion and precision.
+                        Driven by a commitment to innovation, I continuously refine my craft to stay ahead in the
+                        rapidly evolving mobile landscape, building scalable solutions that exceed expectations
+                        through robust architecture and polished design.
+                    </p>
+                </div>
+                <div class="projects-hero-image">
+                    <div class="img-glow"></div>
+                    <img src="assets/pages/project page.png" alt="Biruntha - Projects" class="character-img">
+                </div>
+            </div>
+
+            <div class="projects-list">
+
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <h2 class="project-name">Crew Call</h2>
+                        <div class="project-tags">
+                            <span class="tech-chip">Flutter</span>
+                            <span class="tech-chip">Event Management</span>
+                            <span class="tech-chip">Networking</span>
+                        </div>
+                        <div class="project-desc">
+                            <p>Through this app, we can bring people together as a crew. In this app, two types of
+                                accounts can log in: Organizer and Talent. They can register by selecting their talent
+                                or skill. For an event, organizers can collect helping people by inviting them based on
+                                the talented person’s skills. There are both paid and non-paid opportunities, so
+                                talented people can also earn through this app.</p>
+                        </div>
+                    </div>
+                    <div class="project-images-wrap">
+                        <div class="project-images-carousel">
+                            <img src="assets/projects/crew call/1.png" alt="Crew Call Image 1" class="project-img">
+                            <img src="assets/projects/crew call/2.png" alt="Crew Call Image 2" class="project-img">
+                            <img src="assets/projects/crew call/3.png" alt="Crew Call Image 3" class="project-img">
+                            <img src="assets/projects/crew call/4.png" alt="Crew Call Image 4" class="project-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item reverse">
+                    <div class="project-content">
+                        <h2 class="project-name">Chemistry Quiz</h2>
+                        <div class="project-tags">
+                            <span class="tech-chip">Flutter</span>
+                            <span class="tech-chip">Dart</span>
+                            <span class="tech-chip">Mobile Development</span>
+                        </div>
+                        <div class="project-desc">
+                            <p>Interactive quiz application for chemistry learning built with Flutter and Dart. Features
+                                engaging UI design and comprehensive question database for educational purposes.
+                                Includes multiple-choice questions, progress tracking, and instant feedback system.
+                                Built with colorful animations and student-friendly interface to make chemistry learning
+                                enjoyable and effective.</p>
+                        </div>
+                    </div>
+                    <div class="project-images-wrap">
+                        <div class="project-images-carousel">
+                            <img src="assets/projects/chemistry quiz/1.png" alt="Chemistry Quiz Image 1"
+                                class="project-img">
+                            <img src="assets/projects/chemistry quiz/2.png" alt="Chemistry Quiz Image 2"
+                                class="project-img">
+                            <img src="assets/projects/chemistry quiz/3.png" alt="Chemistry Quiz Image 3"
+                                class="project-img">
+                            <img src="assets/projects/chemistry quiz/4.png" alt="Chemistry Quiz Image 4"
+                                class="project-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <h2 class="project-name">Connect 3</h2>
+                        <div class="project-tags">
+                            <span class="tech-chip">Game Development</span>
+                            <span class="tech-chip">AI Logic</span>
+                            <span class="tech-chip">UI/UX</span>
+                        </div>
+                        <div class="project-desc">
+                            <p>Strategic game implementation with AI opponent. Features intelligent gameplay mechanics
+                                and clean user interface design for engaging gaming experience. Built using Flutter with
+                                custom game logic and interactive animations. Players can compete against smart AI with
+                                multiple difficulty levels.</p>
+                        </div>
+                    </div>
+                    <div class="project-images-wrap">
+                        <div class="project-images-carousel">
+                            <img src="assets/projects/connect 3/1.png" alt="Connect 3 Image 1" class="project-img">
+                            <img src="assets/projects/connect 3/2.png" alt="Connect 3 Image 2" class="project-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item reverse">
+                    <div class="project-content">
+                        <h2 class="project-name">To Do List</h2>
+                        <div class="project-tags">
+                            <span class="tech-chip">Flutter</span>
+                        </div>
+                        <div class="project-desc">
+                            <p>Task management application built with Flutter and Firebase integration. Features user
+                                authentication, real-time data synchronization, and intuitive task organization.
+                                Includes priority levels, due dates, and completion tracking. Clean material design with
+                                smooth animations and offline support.</p>
+                        </div>
+                    </div>
+                    <div class="project-images-wrap">
+                        <div class="project-images-carousel">
+                            <img src="assets/projects/to do list/1.png" alt="To Do List Image 1" class="project-img">
+                            <img src="assets/projects/to do list/2.png" alt="To Do List Image 2" class="project-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <h2 class="project-name">Tic Tac Toe</h2>
+                        <div class="project-tags">
+                            <span class="tech-chip">Flutter</span>
+                            <span class="tech-chip">Game Logic</span>
+                        </div>
+                        <div class="project-desc">
+                            <p>Classic tic-tac-toe game with clean interface and smooth gameplay. Features intuitive
+                                touch controls and win detection logic for engaging user experience. Includes
+                                single-player mode against AI and two-player local multiplayer. Animated game pieces
+                                with victory celebrations and score tracking system.</p>
+                        </div>
+                    </div>
+                    <div class="project-images-wrap">
+                        <div class="project-images-carousel">
+                            <img src="assets/projects/tic tac toe/1.png" alt="Tic Tac Toe Image 1" class="project-img">
+                            <img src="assets/projects/tic tac toe/2.png" alt="Tic Tac Toe Image 2" class="project-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

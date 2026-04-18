@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Biruntha | Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,17 @@
             <nav class="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Projects</a>
+                <a href="projects.html" class="nav-link">Projects</a>
                 <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Experience</a>
                 <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Contact</a>
             </nav>
             <div class="header-right">
                 <a href="mailto:hello@biruntha.dev" class="btn-hire">Contact Me</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
         <div class="header-line"></div>
@@ -49,27 +54,56 @@
         <!-- Main content grid -->
         <div class="hero-container">
 
-            <!-- Left: Text Content -->
-            <div class="hero-content">
+            <!-- Left: Image -->
+            <div class="hero-image-wrap">
+                <div class="img-glow"></div>
+                <img src="assets/pages/home page.png" alt="Biruntha - Software Engineer" class="character-img"
+                    id="char-img">
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="hero-content" style="padding-left: 3rem; padding-right: 0;">
                 <h1 class="hero-name">Biruntha</h1>
                 <p class="hero-title">Software Engineer</p>
                 <p class="hero-bio">
-                    A skilled mobile app developer with experience in building
-                    user‑friendly and efficient applications. Focused on creating
-                    reliable mobile solutions with clean design and smooth performance.
+                    A skilled mobile app developer specializing in crafting high-performance, user-centric experiences.
+                    I transform complex ideas into intuitive digital realities using modern technologies.
+                    My focus is on delivering reliable software that combines aesthetic excellence with seamless
+                    technical precision.
                 </p>
                 <div class="hero-cta">
                     <a href="mailto:hello@biruntha.dev" class="btn btn-primary">Connect With Me</a>
-                    <a href="#" class="btn btn-ghost coming-soon-btn" data-label="Coming Soon">View Projects</a>
+                    <a href="projects.html" class="btn btn-ghost">View Projects</a>
                 </div>
             </div>
 
-            <!-- Right: Image -->
-            <div class="hero-image-wrap">
-                <div class="img-glow"></div>
-                <img src="image.png" alt="Biruntha - Software Engineer" class="character-img" id="char-img">
-            </div>
+        </div>
+    </section>
 
+    <!-- Services Section (Make Home Scrollable) -->
+    <section class="services-section">
+        <div class="services-container">
+            <h2 class="services-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Building high-performance, native-quality apps for iOS and Android using Flutter and React
+                        Native.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Crafting intuitive and visually stunning interfaces that prioritize user experience and brand
+                        identity.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>System Architecture</h3>
+                    <p>Designing robust and scalable back-end structures with seamless Firebase and API integrations.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
