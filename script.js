@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isAbout = document.querySelector('.about-page') !== null;
     const isProjects = document.querySelector('.projects-page') !== null;
     const isContact = document.querySelector('.contact-page') !== null;
+    const isExperience = document.querySelector('.experience-page') !== null;
 
     const isMobile = window.innerWidth < 768;
 
@@ -61,6 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (isContact) {
             // ── CONTACT PAGE: Static (Animations removed for clarity and persistence) ──
             gsap.set('.contact-page', { opacity: 1 });
+        } else if (isExperience) {
+            // ── EXPERIENCE PAGE animations ─────────────
+            const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8 })
+                .from('.bg-text', { opacity: 0, duration: 1.2 }, '-=0.4')
+                .from('.experience-eyebrow', { opacity: 0, y: 20, duration: 0.6 }, '-=0.6')
+                .from('.experience-title', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
+                .from('.experience-subtitle', { opacity: 0, y: 20, duration: 0.6 }, '-=0.5')
+                .from('.timeline-item', { opacity: 0, y: 30, stagger: 0.2, duration: 0.8 }, '-=0.3');
         } else {
             // ── HOME PAGE animations ──────────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
@@ -70,7 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 .from('.hero-name', { opacity: 0, x: 30, duration: 0.7 }, '-=0.6')
                 .from('.hero-title', { opacity: 0, x: 20, duration: 0.6 }, '-=0.5')
                 .from('.hero-bio', { opacity: 0, x: 15, duration: 0.6 }, '-=0.4')
-                .from('.hero-cta', { opacity: 0, x: 15, duration: 0.6 }, '-=0.4');
+                .from('.hero-cta', { opacity: 0, x: 15, duration: 0.6 }, '-=0.4')
+                .from('.nav-card', { opacity: 0, y: 30, stagger: 0.1, duration: 0.8 }, '-=0.4');
         }
     } else {
         // Mobile fallback: immediate opacity 1 or simple reveal

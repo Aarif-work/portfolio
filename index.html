@@ -19,12 +19,20 @@
     <!-- Header -->
     <header class="main-header" id="main-header">
         <div class="header-container">
-            <div class="logo">Biruntha<span class="logo-dot">.</span></div>
+            <a href="index.html" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    style="margin-right: 8px;">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                Biruntha<span class="logo-dot">.</span>
+            </a>
             <nav class="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
-                <a href="#" class="nav-link coming-soon" data-label="Coming Soon">Experience</a>
+                <a href="experience.html" class="nav-link">Experience</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <div class="header-right">
@@ -80,29 +88,41 @@
         </div>
     </section>
 
-    <!-- Services Section (Make Home Scrollable) -->
-    <section class="services-section">
-        <div class="services-container">
-            <h2 class="services-title">What I Do</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Mobile Development</h3>
-                    <p>Building high-performance, native-quality apps for iOS and Android using Flutter and React
-                        Native.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Crafting intuitive and visually stunning interfaces that prioritize user experience and brand
-                        identity.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>System Architecture</h3>
-                    <p>Designing robust and scalable back-end structures with seamless Firebase and API integrations.
-                    </p>
-                </div>
+    <!-- Home Navigation Grid -->
+    <section class="home-nav-section">
+        <div class="home-nav-container">
+            <div class="home-nav-grid">
+                <!-- About Card -->
+                <a href="about.html" class="nav-card">
+                    <div class="nav-card-icon">�</div>
+                    <h3>About Me</h3>
+                    <p>Discover my journey, skills, and the mindset I bring to every digital project.</p>
+                    <div class="nav-card-arrow">Learn More →</div>
+                </a>
+
+                <!-- Projects Card -->
+                <a href="projects.html" class="nav-card">
+                    <div class="nav-card-icon">🚀</div>
+                    <h3>Case Studies</h3>
+                    <p>Explore a collection of mobile applications crafted with passion and precision.</p>
+                    <div class="nav-card-arrow">View Work →</div>
+                </a>
+
+                <!-- Experience Card -->
+                <a href="experience.html" class="nav-card">
+                    <div class="nav-card-icon">💼</div>
+                    <h3>Professional</h3>
+                    <p>My career journey, professional roles, and corporate-level contributions.</p>
+                    <div class="nav-card-arrow">My Career →</div>
+                </a>
+
+                <!-- Contact Card -->
+                <a href="contact.html" class="nav-card">
+                    <div class="nav-card-icon">✨</div>
+                    <h3>Get In Touch</h3>
+                    <p>Let's connect and build something amazing together. Reach out anytime.</p>
+                    <div class="nav-card-arrow">Contact Me →</div>
+                </a>
             </div>
         </div>
     </section>
