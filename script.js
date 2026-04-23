@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Detect which page we're on ─────────────────
     const isAbout = document.querySelector('.about-page') !== null;
     const isProjects = document.querySelector('.projects-page') !== null;
+    const isContact = document.querySelector('.contact-page') !== null;
 
     const isMobile = window.innerWidth < 768;
 
@@ -57,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 .from('.projects-title', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
                 .from('.projects-subtitle', { opacity: 0, y: 14, duration: 0.6 }, '-=0.5')
                 .from('.project-item', { opacity: 0, y: 30, stagger: 0.2, duration: 0.8 }, '-=0.2');
+        } else if (isContact) {
+            // ── CONTACT PAGE: Static (Animations removed for clarity and persistence) ──
+            gsap.set('.contact-page', { opacity: 1 });
         } else {
             // ── HOME PAGE animations ──────────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
