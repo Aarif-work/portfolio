@@ -1360,21 +1360,21 @@ body {
 }
 
 /* ──────────────────────────────────────────────────
-   HOME NAVIGATION SECTION
+   GLOBAL NAVIGATION SECTION
    ────────────────────────────────────────────────── */
-.home-nav-section {
+.global-nav-section {
     position: relative;
-    padding: 6rem 0;
+    padding: 8rem 0;
     z-index: 10;
 }
 
-.home-nav-container {
+.global-nav-container {
     width: 88%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.home-nav-grid {
+.global-nav-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
@@ -1443,21 +1443,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .home-nav-section {
+    .global-nav-section {
         padding: 4rem 0;
     }
 
-    .home-nav-grid {
+    .global-nav-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
-    }
-
-    .nav-card {
-        padding: 1.8rem 1.5rem;
-    }
-
-    .nav-card h3 {
-        font-size: 1.2rem;
     }
 }
 

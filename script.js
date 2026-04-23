@@ -37,55 +37,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!isMobile) {
         if (isAbout) {
-            // ── ABOUT PAGE animations ─────────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8 })
-                .from('.bg-text', { opacity: 0, duration: 1 }, '-=0.4')
-                .from('.about-img', { opacity: 0, x: 50, duration: 1.1 }, '-=0.8')
-                .from('.about-tag', { opacity: 0, scale: 0.85, duration: 0.7 }, '-=0.4')
-                .from('.about-eyebrow', { opacity: 0, x: -30, duration: 0.6 }, '-=0.5')
-                .from('.about-title', { opacity: 0, x: -40, duration: 0.8 }, '-=0.5')
-                .from('.about-text p', { opacity: 0, x: -20, stagger: 0.15, duration: 0.6 }, '-=0.5')
-                .from('.skills-section', { opacity: 0, y: 14, duration: 0.6 }, '-=0.3')
-                .from('.about-meta-row', { opacity: 0, y: 14, duration: 0.6 }, '-=0.4')
-                .from('.about-card', { opacity: 0, y: 20, stagger: 0.1, duration: 0.5 }, '-=0.3');
+            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8, clearProps: 'all' })
+                .from('.about-img', { opacity: 0, x: 50, duration: 1.1, clearProps: 'all' }, '-=0.6')
+                .from('.about-title', { opacity: 0, x: -30, duration: 0.8, clearProps: 'all' }, '-=0.5')
+                .from('.about-text p', { opacity: 0, y: 15, stagger: 0.1, duration: 0.6, clearProps: 'all' }, '-=0.4')
+                .from('.about-card', { opacity: 0, y: 20, stagger: 0.1, duration: 0.5, clearProps: 'all' }, '-=0.3')
+                .from('.global-nav-section', { opacity: 0, y: 30, duration: 0.8, clearProps: 'all' }, '-=0.2');
         } else if (isProjects) {
-            // ── PROJECTS PAGE animations ──────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8 })
-                .from('.bg-text', { opacity: 0, duration: 1.2 }, '-=0.4')
-                .from('.projects-hero-image', { opacity: 0, x: 40, duration: 1 }, '-=0.8')
-                .from('.projects-eyebrow', { opacity: 0, y: 16, duration: 0.6 }, '-=0.5')
-                .from('.projects-title', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
-                .from('.projects-subtitle', { opacity: 0, y: 14, duration: 0.6 }, '-=0.5')
-                .from('.project-item', { opacity: 0, y: 30, stagger: 0.2, duration: 0.8 }, '-=0.2');
-        } else if (isContact) {
-            // ── CONTACT PAGE: Static (Animations removed for clarity and persistence) ──
-            gsap.set('.contact-page', { opacity: 1 });
+            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8, clearProps: 'all' })
+                .from('.projects-title', { opacity: 0, y: 20, duration: 0.8, clearProps: 'all' }, '-=0.5')
+                .from('.project-item', { opacity: 0, y: 40, stagger: 0.2, duration: 1, clearProps: 'all' }, '-=0.4')
+                .from('.global-nav-section', { opacity: 0, y: 30, duration: 0.8, clearProps: 'all' }, '-=0.2');
         } else if (isExperience) {
-            // ── EXPERIENCE PAGE animations ─────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8 })
-                .from('.bg-text', { opacity: 0, duration: 1.2 }, '-=0.4')
-                .from('.experience-eyebrow', { opacity: 0, y: 20, duration: 0.6 }, '-=0.6')
-                .from('.experience-title', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
-                .from('.experience-subtitle', { opacity: 0, y: 20, duration: 0.6 }, '-=0.5')
-                .from('.timeline-item', { opacity: 0, y: 30, stagger: 0.2, duration: 0.8 }, '-=0.3');
+            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8, clearProps: 'all' })
+                .from('.experience-title', { opacity: 0, y: 20, duration: 0.8, clearProps: 'all' }, '-=0.5')
+                .from('.timeline-item', { opacity: 0, y: 30, stagger: 0.2, duration: 0.8, clearProps: 'all' }, '-=0.3')
+                .from('.global-nav-section', { opacity: 0, y: 30, duration: 0.8, clearProps: 'all' }, '-=0.2');
+        } else if (isContact) {
+            gsap.from('.contact-content', { opacity: 0, y: 30, duration: 1, ease: 'power3.out', clearProps: 'all' });
+            gsap.from('.global-nav-section', { opacity: 0, y: 30, duration: 1, delay: 0.5, clearProps: 'all' });
         } else {
-            // ── HOME PAGE animations ──────────────────
+            // ── HOME PAGE ──────────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8 })
-                .from('.bg-text', { opacity: 0, duration: 1.2 }, '-=0.4')
-                .from('.character-img', { opacity: 0, x: -50, duration: 1 }, '-=0.8')
-                .from('.hero-name', { opacity: 0, x: 30, duration: 0.7 }, '-=0.6')
-                .from('.hero-title', { opacity: 0, x: 20, duration: 0.6 }, '-=0.5')
-                .from('.hero-bio', { opacity: 0, x: 15, duration: 0.6 }, '-=0.4')
-                .from('.hero-cta', { opacity: 0, x: 15, duration: 0.6 }, '-=0.4')
-                .from('.nav-card', { opacity: 0, y: 30, stagger: 0.1, duration: 0.8 }, '-=0.4');
+            tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8, clearProps: 'all' })
+                .from('.character-img', { opacity: 0, x: -50, duration: 1, clearProps: 'all' }, '-=0.6')
+                .from('.hero-name', { opacity: 0, x: 30, duration: 0.7, clearProps: 'all' }, '-=0.6')
+                .from('.hero-title', { opacity: 0, x: 20, duration: 0.6, clearProps: 'all' }, '-=0.5')
+                .from('.hero-bio', { opacity: 0, x: 15, duration: 0.6, clearProps: 'all' }, '-=0.4')
+                .from('.hero-cta', { opacity: 0, x: 15, duration: 0.6, clearProps: 'all' }, '-=0.4')
+                .from('.nav-card', { opacity: 0, y: 30, stagger: 0.1, duration: 0.8, clearProps: 'all' }, '-=0.4');
         }
     } else {
-        // Mobile fallback: immediate opacity 1 or simple reveal
-        gsap.set('.skill-progress', { width: 0 }); // reset for mobile manual trigger
+        // Mobile fallback: force visibility of all animated elements
+        gsap.set('.main-header, .hero-content, .character-img, .nav-card, .about-img, .project-item, .timeline-item, .contact-content, .global-nav-section', {
+            opacity: 1,
+            y: 0,
+            x: 0,
+            scale: 1,
+            visibility: 'visible'
+        });
+        gsap.set('.skill-progress', { width: 0 });
     }
 
     // Always animate skill bars
