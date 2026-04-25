@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // ── HOME PAGE ──────────────────
             const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
             tl.from('.main-header', { y: -30, opacity: 0, duration: 0.8, clearProps: 'all' })
-                .from('.character-img', { opacity: 0, x: -50, duration: 1, clearProps: 'all' }, '-=0.6')
+                .from('.character-img', { opacity: 0, y: 20, duration: 1, clearProps: 'all' }, '-=0.6')
                 .from('.hero-name', { opacity: 0, x: 30, duration: 0.7, clearProps: 'all' }, '-=0.6')
                 .from('.hero-title', { opacity: 0, x: 20, duration: 0.6, clearProps: 'all' }, '-=0.5')
                 .from('.hero-bio', { opacity: 0, x: 15, duration: 0.6, clearProps: 'all' }, '-=0.4')
